@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/tweet")
-public class TweetController {
+public class TweetController {  //düzenlenecek!!
     private TweetService tweetService;
 
     @Autowired
