@@ -3,7 +3,6 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import java.time.LocalDateTime;
 
 @NoArgsConstructor
@@ -21,10 +20,5 @@ public class Tweet {
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
-
-    /*
-    @ManyToOne
-    private User user;
-     */
 
 }

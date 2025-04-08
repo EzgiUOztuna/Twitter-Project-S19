@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "retweet", schema = "schema")
+@Table(name = "retweet")
 public class Retweet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

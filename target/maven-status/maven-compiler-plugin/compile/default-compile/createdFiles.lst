@@ -1,8 +1,6 @@
-com/twitter/api/Twitter_API/service/TweetService.class
-com/twitter/api/Twitter_API/controller/UserController.class
+com/twitter/api/Twitter_API/entity/Tweet.class
+com/twitter/api/Twitter_API/entity/Like.class
+com/twitter/api/Twitter_API/entity/User.class
+com/twitter/api/Twitter_API/entity/Comment.class
+com/twitter/api/Twitter_API/entity/Retweet.class
 com/twitter/api/Twitter_API/TwitterApiApplication.class
-com/twitter/api/Twitter_API/service/UserServiceImpl.class
-com/twitter/api/Twitter_API/controller/TweetController.class
-com/twitter/api/Twitter_API/service/UserService.class
-com/twitter/api/Twitter_API/exceptions/GlobalExceptionHandler.class
-com/twitter/api/Twitter_API/service/TweetServiceImpl.class
