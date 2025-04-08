@@ -1,6 +1,16 @@
 /Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/TwitterApiApplication.java
+/Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/controller/TweetController.java
+/Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/controller/UserController.java
+/Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/controller/controllerImpl/TweetControllerImpl.java
+/Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/controller/controllerImpl/UserControllerImpl.java
 /Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/entity/Comment.java
 /Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/entity/Like.java
 /Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/entity/Retweet.java
 /Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/entity/Tweet.java
 /Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/entity/User.java
+/Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/repository/TweetRepository.java
+/Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/repository/UserRepository.java
+/Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/service/TweetService.java
+/Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/service/UserService.java
+/Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/service/serviceImpl/TweetServiceImpl.java
+/Users/ezgiuygun/Documents/GitHub/Twitter-Project-S19/src/main/java/com/twitter/api/Twitter_API/service/serviceImpl/UserServiceImpl.java
