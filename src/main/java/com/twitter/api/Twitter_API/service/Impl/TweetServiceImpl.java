@@ -1,16 +1,50 @@
-package com.twitter.api.Twitter_API.service;
+package com.twitter.api.Twitter_API.service.Impl;
 import com.twitter.api.Twitter_API.entity.Tweet;
-import com.twitter.api.Twitter_API.entity.User;
-import com.twitter.api.Twitter_API.exceptions.TweetNotFoundException;
 import com.twitter.api.Twitter_API.repository.TweetRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.twitter.api.Twitter_API.service.TweetService;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class TweetServiceImpl implements TweetService{
+public class TweetServiceImpl implements TweetService {
     private TweetRepository tweetRepository;
 
+    @Override
+    public Tweet save(Tweet tweet) {
+        return null;
+    }
+
+    @Override
+    public List<Tweet> findByUserId(Long userId) {
+        return List.of();
+    }
+
+    @Override
+    public Tweet findById(Long id) {
+        return null;
+    }
+
+    @Override
+    public Tweet update(Long id, Tweet tweet) {
+        return null;
+    }
+
+    @Override
+    public void delete(Long id, Long userId) {
+
+    }
+
+    @Override
+    public List<Tweet> findAll() {
+        return List.of();
+    }
+
+
+
+
+
+
+    /*
     @Autowired
     public TweetServiceImpl(TweetRepository tweetRepository) {
         this.tweetRepository = tweetRepository;
@@ -67,4 +101,5 @@ public class TweetServiceImpl implements TweetService{
     public List<Tweet> findAll() {
         return tweetRepository.findAll();
     }
+     */
 }

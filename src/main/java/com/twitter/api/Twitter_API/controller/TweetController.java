@@ -1,7 +1,6 @@
 package com.twitter.api.Twitter_API.controller;
 import com.twitter.api.Twitter_API.dto.TweetResponse;
 import com.twitter.api.Twitter_API.entity.Tweet;
-import com.twitter.api.Twitter_API.exceptions.TweetNotFoundException;
 import com.twitter.api.Twitter_API.service.TweetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -38,7 +37,8 @@ public class TweetController {  //düzenlenecek!!
         Tweet tweet = tweetService.findById(id);
 
         if (tweet == null) {
-            throw new TweetNotFoundException("Tweet not found with id: " + id);
+            return null;
+            //throw new TweetNotFoundException("Tweet not found with id: " + id);
         }
 
         return new TweetResponse(tweet.getContent(), tweet.getCreatedAt());
@@ -48,7 +48,8 @@ public class TweetController {  //düzenlenecek!!
     public TweetResponse update(@PathVariable("id") Long id, @RequestBody Tweet tweet) {
         Tweet existingTweet = tweetService.findById(id);
         if (existingTweet == null) {
-            throw new TweetNotFoundException("Tweet not found with id: " + id);
+            return null;
+            //throw new TweetNotFoundException("Tweet not found with id: " + id);
         }
 
         if(tweet.getContent() != null){

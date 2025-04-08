@@ -1,13 +1,14 @@
-package com.twitter.api.Twitter_API.service;
+package com.twitter.api.Twitter_API.service.Impl;
 import com.twitter.api.Twitter_API.entity.User;
 import com.twitter.api.Twitter_API.repository.UserRepository;
+import com.twitter.api.Twitter_API.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     @Autowired

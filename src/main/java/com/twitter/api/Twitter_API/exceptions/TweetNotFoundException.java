@@ -1,3 +1,4 @@
+/*
 package com.twitter.api.Twitter_API.exceptions;
 
 import org.springframework.http.HttpStatus;
@@ -7,3 +8,4 @@ public class TweetNotFoundException extends ApiException {
         super(message, HttpStatus.NOT_FOUND);
     }
 }
+*/

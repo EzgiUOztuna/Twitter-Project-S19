@@ -1,3 +1,4 @@
+/*
 package com.twitter.api.Twitter_API.exceptions;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,3 +17,4 @@ public class ExceptionResponse {
         this.dateTime = dateTime;
     }
 }
+*/

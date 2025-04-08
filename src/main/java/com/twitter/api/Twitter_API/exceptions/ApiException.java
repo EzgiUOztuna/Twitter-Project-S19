@@ -1,3 +1,4 @@
+/*
 package com.twitter.api.Twitter_API.exceptions;
 import lombok.*;
 import org.springframework.http.HttpStatus;
@@ -13,3 +14,4 @@ public class ApiException extends RuntimeException{
     }
 
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.twitter.api.Twitter_API.exceptions;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
@@ -30,3 +31,4 @@ public class GlobalExceptionHandler {
 }
 
 
+*/
