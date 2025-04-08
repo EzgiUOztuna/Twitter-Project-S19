@@ -1,3 +1,4 @@
+/*
 package com.twitter.api.Twitter_API.service.Impl;
 import com.twitter.api.Twitter_API.entity.Tweet;
 import com.twitter.api.Twitter_API.repository.TweetRepository;
@@ -101,5 +102,7 @@ public class TweetServiceImpl implements TweetService {
     public List<Tweet> findAll() {
         return tweetRepository.findAll();
     }
-     */
+
 }
+
+*/

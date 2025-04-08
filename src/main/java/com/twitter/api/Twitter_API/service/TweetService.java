@@ -1,3 +1,4 @@
+/*
 package com.twitter.api.Twitter_API.service;
 
 import com.twitter.api.Twitter_API.entity.Tweet;
@@ -13,3 +14,4 @@ public interface TweetService {
     void delete(Long id, Long userId);  //🚨(Sadece tweet sahibi ilgili tweeti silebilimelidir.)
     List<Tweet> findAll();
 }
+*/
