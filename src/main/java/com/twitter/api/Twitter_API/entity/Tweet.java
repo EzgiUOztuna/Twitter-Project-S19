@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "tweet", schema = "public")
+@Table(name = "tweet")
 public class Tweet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "like", schema = "public")
+@Table(name = "like")
 public class Like {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
