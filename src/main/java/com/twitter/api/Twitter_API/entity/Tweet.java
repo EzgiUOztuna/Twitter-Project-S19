@@ -21,4 +21,7 @@ public class Tweet {
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
+    @ManyToOne
+    private User user;
+
 }
