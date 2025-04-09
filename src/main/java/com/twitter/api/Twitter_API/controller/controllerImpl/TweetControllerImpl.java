@@ -38,5 +38,11 @@ public class TweetControllerImpl implements TweetController {
         return tweetService.updateTweet(id, updatedTweet);
     }
 
+    @DeleteMapping(path = "/delete/{id}")
+    @Override
+    public void deleteTweet(@PathVariable(name = "id") Long id) {
+        tweetService.deleteTweet(id);
+    }
+
 
 }

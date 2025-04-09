@@ -10,4 +10,5 @@ public interface TweetController {
     public List<Tweet> getAllTweets(Tweet tweet);
     public Tweet getTweetById(Long id);
     public Tweet updateTweet(Long id, Tweet updatedTweet);
+    public void deleteTweet(Long id);
 }

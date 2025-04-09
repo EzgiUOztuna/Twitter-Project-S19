@@ -48,4 +48,12 @@ public class TweetServiceImpl implements TweetService {
         }
         return null;
     }
+
+    @Override
+    public void deleteTweet(Long id) {
+        Tweet dbTweet = getTweetById(id);
+        if(dbTweet != null){
+            tweetRepository.delete(dbTweet);
+        }
+    }
 }
