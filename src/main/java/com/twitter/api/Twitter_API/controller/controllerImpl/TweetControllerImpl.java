@@ -20,7 +20,7 @@ public class TweetControllerImpl implements TweetController {
         return tweetService.saveTweet(tweet);
     }
 
-    @GetMapping("/get/all")
+    @GetMapping("/list/all")
     @Override
     public List<Tweet> getAllTweets(Tweet tweet) {
         return tweetService.getAllTweets(tweet);
