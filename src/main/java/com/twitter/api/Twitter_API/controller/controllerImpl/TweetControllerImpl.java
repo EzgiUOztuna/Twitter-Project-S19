@@ -14,16 +14,22 @@ public class TweetControllerImpl implements TweetController {
     @Autowired
     private TweetService tweetService;
 
-    @PostMapping("/save")
+    @PostMapping(path = "/save")
     @Override
     public Tweet saveTweet(@RequestBody Tweet tweet) {
         return tweetService.saveTweet(tweet);
     }
 
-    @GetMapping("/list/all")
+    @GetMapping(path = "/list/all")
     @Override
     public List<Tweet> getAllTweets(Tweet tweet) {
         return tweetService.getAllTweets(tweet);
+    }
+
+    @GetMapping(path = "/list/{id}")
+    @Override
+    public Tweet getTweetById(@PathVariable(name = "id") Long id) {
+        return tweetService.getTweetById(id);
     }
 
 

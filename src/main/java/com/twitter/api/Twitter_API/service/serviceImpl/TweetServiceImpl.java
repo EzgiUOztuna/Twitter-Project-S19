@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TweetServiceImpl implements TweetService {
@@ -22,5 +23,16 @@ public class TweetServiceImpl implements TweetService {
     @Override
     public List<Tweet> getAllTweets(Tweet tweet) {
         return tweetRepository.findAll();
+    }
+
+    @Override
+    public Tweet getTweetById(Long id) {
+        Optional<Tweet> optional = tweetRepository.findById(id);
+
+        if(optional.isPresent()) {
+            return optional.get();
+        }
+        return null;
+        //return optional.orElse(null); -Bu şekilde kısaca da yazabiliriz. (32-35 satırları)
     }
 }

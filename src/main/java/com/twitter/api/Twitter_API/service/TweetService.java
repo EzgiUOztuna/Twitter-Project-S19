@@ -8,4 +8,5 @@ public interface TweetService {
 
     public Tweet saveTweet(Tweet tweet);
     public List<Tweet> getAllTweets(Tweet tweet);
+    public Tweet getTweetById(Long id);
 }
