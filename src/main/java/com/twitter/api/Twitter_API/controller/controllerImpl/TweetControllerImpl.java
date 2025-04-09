@@ -32,5 +32,11 @@ public class TweetControllerImpl implements TweetController {
         return tweetService.getTweetById(id);
     }
 
+    @PutMapping(path = "/update/{id}")
+    @Override
+    public Tweet updateTweet(@PathVariable(name = "id") Long id, @RequestBody Tweet updatedTweet) {
+        return tweetService.updateTweet(id, updatedTweet);
+    }
+
 
 }

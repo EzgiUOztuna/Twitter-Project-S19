@@ -35,4 +35,17 @@ public class TweetServiceImpl implements TweetService {
         return null;
         //return optional.orElse(null); -Bu şekilde kısaca da yazabiliriz. (32-35 satırları)
     }
+
+    @Override
+    public Tweet updateTweet(Long id, Tweet updatedTweet) {
+        Tweet dbTweet = getTweetById(id);
+        if(dbTweet != null){
+            dbTweet.setContent(updatedTweet.getContent());
+            dbTweet.setCreatedAt(updatedTweet.getCreatedAt());
+            dbTweet.setUser(updatedTweet.getUser());
+
+            tweetRepository.save(dbTweet);
+        }
+        return null;
+    }
 }
