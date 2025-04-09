@@ -6,6 +6,8 @@ import com.twitter.api.Twitter_API.service.TweetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class TweetServiceImpl implements TweetService {
 
@@ -15,5 +17,10 @@ public class TweetServiceImpl implements TweetService {
     @Override
     public Tweet saveTweet(Tweet tweet) {
         return tweetRepository.save(tweet);
+    }
+
+    @Override
+    public List<Tweet> getAllTweets(Tweet tweet) {
+        return tweetRepository.findAll();
     }
 }
